@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Enrico Camporeale | Centrum Wiskunde & Informatica</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing">
+<a name="top"></a>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+                         
+                     
+                        <nav id="nav">
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="research.html">Research</font></a></li>
+                                <li><a href="./mlspaceweather/index.html" target="_blank">Machine Learning</a></li>
+                                <li><a href="cv.html">CV</a></li>
+                                <li><a href="codes.html"><font color="red">Codes</font></a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="book.html">Book</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                  
+    
+                        </ul>
+                        
+                        </nav>
+
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+			<section id="banner">
+				<h2>Enrico Camporeale</h2>
+		
+			</section>
+
+			<!-- Three -->
+				<section id="three" class="wrapper style1">
+					<div class="container">
+						<header class="major p">
+							<h2>Codes</h2>
+						</header>
+
+
+
+I use a variety of computer codes. I have written some of them myself, while others are part of collaborations. Some are freely available, others are proprietary and not distributable. Here you can find a short description of the codes.
+
+<li><a href="#1">Implicit PIC code</a></li>
+
+<li><a href="#2">Curvilinear PIC code</a></li>
+
+<li><a href="#3">Diffusion code for radiation belt</a></li>
+
+<li><a href="#4">Hot plasma linear dispersion solver</a></li>
+
+<li><a href="#5">Linear kinetic solver for inhomogeneous plasma</a></li>
+
+<li><a href="#6">Mode conversion</a></li>
+
+<li><a href="https://projects.cwi.nl/mlspaceweather/software.html" target="_blank">Software & Data for Machine Learning projects</a></li>
+
+<a name="1"></a>
+<b>Implicit PIC code</b><br>
+Standard PIC codes use an explicit timestepping scheme that strongly constrains the choice of grid size and time step, to be numerically stable. The implicit PIC code is based on the implicit moment method and, by using a (semi)-implicit time discretization relaxes the stringent stability requirement. Thus one can allow larger grid size, longer time steps, and usually it is possible to resort to physical mass-ratios between species.<br> 
+I have been involved in the coding of the 2-dimensional PIC code <a href="https://homepages.cwi.nl/~camporea/papers/Markidis_astronum08.pdf" target="_blank"> Parsek2D </a>. More recently a 3D version of the code, named iPIC3D, has been made available on Github. You can download it  <a href="https://github.com/CmPA/iPic3D" target="_blank"> here </a>. Contact <a href="https://perswww.kuleuven.be/~u0052182/" target="_blank"> Giovanni Lapenta</a> for more information.
+<p></p>
+<a name="2"></a>
+<b>Curvilinear PIC code</b><br>
+I have been involved to the development of a curvilinear PIC code, named CPIC, during my postdoc at the Los Alamos National Laboratory. The code is 3D and electrostatic, and is used for plasma-material interaction studies, allowing fairly arbitrary geometry domains. The details of the code can be found in this <a href="https://homepages.cwi.nl/~camporea/papers/06675865.pdf" target="_blank"> paper </a>.
+Unfortunately, the code cannot be openly distributed, as is property of LANL.
+
+<p></p>
+<a name="3"></a>
+<b>Diffusion code</b><br>
+Diffusion codes are extensively used in radiation belt studies. I have coded a 2D diffusion code that was later incorporated as part of the 3D code DREAM3D. I have investigated and compared different schemes for the time discretization, including direct and preconditioned iterative solvers. Details of such study can be found in this <a href="http://onlinelibrary.wiley.com/doi/10.1002/jgra.50293/abstract" target="_blank"> paper</a>. <br>
+DREAM3D is LANL property and not distributed, but the 2D part that I wrote can be distributed upon request.
+It also includes a routine to calculate the bounce-averaged diffusion coefficients for field-aligned propagating waves.<br>
+More recently I have started collaborating with <a href="http://rbm.epss.ucla.edu/person/yuri-shprits/" target="_blank"> Y. Shprits </a> and his group, by using the diffusion code that they have developed in the last several years, VERB, which is also availablae upon request to Dr. Shprits.
+
+<p></p>
+<a name="4"></a>
+<b>Hot plasma linear dispersion solver</b><br>
+The hot plasma linear solver follows the classical derivation of kinetic linear theory from Stix's book. The code has been initially developed by Prof. David Burgess at QMUL (London) and later modified by myself.
+In standard mode it uses a Newton-Raphson root finding algorithm, but we have also played with different ideas to overcome the weaknesses of Newton-Raphson (which might actually not converge on a given solution). For instance, we have implemented a bisection method using triangular meshes.
+<p></p>
+
+<a name="5"></a>
+<b> Mode conversion</b><br>
+This code solves a model based on two-fluid linear equations, in 2D. It has been used to study the linear mode conversion of a whistler/lower hybrid wave packet impinging on a density striation. The code is described <a href="http://onlinelibrary.wiley.com/doi/10.1029/2012JA017726/pdf" target="_blank"> here </a>.
+<p></p>
+
+<a href="#top">Back to the top</a>
+
+  </div>
+<!-- Footer -->
+			<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Enrico Camporeale</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li> The contents of these pages have not been reviewed or approved by CWI.
+					</ul>
+			</footer>  
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2920493; 
+var sc_invisible=1; 
+var sc_partition=30; 
+var sc_security="0391eb40"; 
+</script>
+
+<script type="text/javascript" src="./code_files/counter_xhtml.js">
+</script><noscript>
+<div class="statcounter">
+<a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c31.statcounter.com/2920493/0/0391eb40/0/" alt="best counter" /></a>
+</div></noscript>
+<!-- End of StatCounter Code -->
+
+</div>
+
+</div>
+
+
+
+
+</body></html>
