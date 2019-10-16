@@ -20,14 +20,16 @@
                      
                         <nav id="nav">
                         <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="research.html">Research</font></a></li>
-                                <li><a href="./mlspaceweather/index.html" target="_blank">Machine Learning</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                <li><a href="research.html">Research</a></li>
+                                <li><a href="mlprojects.html">Machine Learning</a></li>
                                 <li><a href="cv.html">CV</a></li>
-                                <li><a href="codes.html"><font color="red">Codes</font></a></li>
+                                <li><a href="codes.html"><font color="red">Software</font></a></li>
                                 <li><a href="publications.html">Publications</a></li>
                                 <li><a href="book.html">Book</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="collaborators.html">Collaborators</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                   
     
                         </ul>
@@ -47,11 +49,36 @@
 				<section id="three" class="wrapper style1">
 					<div class="container">
 						<header class="major p">
-							<h2>Codes</h2>
+							<h2>Software & Data</h2>
 						</header>
 
 
 
+
+<h3> Solar wind classification </h3>
+We have devised a four-category classification algorithm for the solar wind, based on Gaussian Processes. The four categories are the ones previously adopted in Xu and Borovsky [2015]: ejecta, coronal hole origin plasma, streamer belt origin plasma, and sector reversal origin plasma. The algorithm is trained and tested on a labeled portion of the OMNI2 dataset. </br>
+Here, we distribute a database with about 300,000 hours of labeled solar wind data calculated from <a href="ftp://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/" target="_blank"> OMNI2</a> for the years 1965-2007.</br>
+<b> Please reference the following paper if you publish results based on this database:</b> </br>
+ E. Camporeale,  A. Care', J. Borovsky (2017) <a href="http://onlinelibrary.wiley.com/doi/10.1002/2017JA024383/full" target="_blank"><b>Classification of Solar Wind with Machine Learning</b></a>, <em> J. Geophys. Res.</em>, in press 
+<p></p>
+<ul>
+
+<li>
+<a href="./software/OMNI2_classification.dat" > OMNI2_classification.dat </a> (12Mb)</br> 
+ASCII file with about 300,000 rows and 7 columns. The first three columns are [year, doy, hour]. The last four columns indicate the probability of the event belonging to ejecta, coronal hole origin plasma, streamer belt origin plasma, and sector reversal origin plasma, respectively.
+</li>
+
+<li>
+<a href="./software/classify_solar_wind.m" > classify_solar_wind.m </a> </br> 
+MATLAB file with a driver routine to perform Gaussian Process classification on a portion of the OMNI2 dataset. The output is a seven column matrix, as explained above. The routine uses the GPML software, available at  <a href="http://www.gaussianprocess.org/gpml/code"> http://www.gaussianprocess.org/gpml/code</a>, and the file below.
+</li>
+
+<li>
+<a href="./software/parameters_classification.mat" > parameters_classification.mat </a> </br> 
+This file contains the training set and the optimized hyperparameters to run <a href="./software/classify_solar_wind.m" > classify_solar_wind.m </a>
+</li>
+
+<h3> Other codes</h3>
 I use a variety of computer codes. I have written some of them myself, while others are part of collaborations. Some are freely available, others are proprietary and not distributable. Here you can find a short description of the codes.
 
 <li><a href="#1">Implicit PIC code</a></li>
@@ -106,7 +133,8 @@ This code solves a model based on two-fluid linear equations, in 2D. It has been
 					<ul class="copyright">
 						<li>&copy; Enrico Camporeale</li>
 						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-						<li> The contents of these pages have not been reviewed or approved by CWI.
+						<li> The contents of these pages have not been reviewed or approved by CWI.</li></br>
+						<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />The databases published here are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. <br/>
 					</ul>
 			</footer>  
 <!-- Start of StatCounter Code -->

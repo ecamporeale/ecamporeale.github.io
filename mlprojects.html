@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-        <title>Machine Learning for Space Weather</title>
-        <meta charset="utf-8" />
-        <link href="https://projects.cwi.nl/mlspaceweather/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Machine Learning for Space Weather Full Atom Feed" />
-
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<html>
+	<head>
+		<title>Enrico Camporeale | Centrum Wiskunde & Informatica</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		      <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
         <link rel="stylesheet" type="text/css" href="./theme/gumby.css" />
@@ -17,48 +17,62 @@
         <script src="./theme/js/libs/modernizr-2.6.2.min.js"></script>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 
+	</head>
+	<body class="landing">
+            <a name="top"></a>
 
+		<!-- Header -->
+			<header id="header" class="alt">
+                         
+                     
+                        <nav id="nav">
+                        <ul>
+                             <li><a href="index.html">Home</a></li>
+                                <li><a href="research.html">Research</a></li>
+                                <li><a href="mlprojects.html"><font color="red">Machine Learning</font></a></li>
+                                <li><a href="cv.html">CV</a></li>
+                                <li><a href="codes.html">Software</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="book.html">Book</a></li>
+                                <li><a href="collaborators.html">Collaborators</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                  
+                  
+    
+                        </ul>
+                        
+                        </nav>
 
-</head>
+			</header>
 
-<body id="index" class="home">
+			
+			<section id="banner">
+				<h2>Enrico Camporeale</h2>
+		
+			</section>
+
+			<section id="three" class="wrapper style1">
+					<div class="container">
+						<header class="major p">
+							<h2>Machine Learning for Space Weather</h2>
+						</header>
+                                        </div>
+                        </section>
 
 
     <div class="container">
+   
 
         <div class="row">
 
-             <header id="banner" class="body">
-           <h1><a href="index.html">Machine Learning for Space Weather <strong></strong></a></h1>
-      </header><!-- /#banner -->
-
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="team.html">Team</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="software.html">Software & Data</a></li>
-                <li><a href="book.html">Book</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-
-              </ul>
-            </div>
-
-    
-
-    <h2>Projects</h2>
     
     				<section class="wrapper style1">
+    				 <h2>Projects</h2>
 					<div class="container">
 					 <section>
 					
-					 </br>
-                                        </br>
+					
                                                 <h4>Forecast of ground magnetic perturbations (dB/dt) </h4>
 
                                                 <p><span ><img src="images/dbdt.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px" alt="" /></span>
@@ -74,7 +88,7 @@
   						
                                                  <p><span ><img src="images/radiation_belt.png" width=15% align="left" alt="" style="margin:0px 50px 20px 0px" alt="" /></span>
                                                  5-years project funded as a personal fellowship through a NWO-VIDI grant.</br> 
-                                                 In this project we will Bayesian parameter estimation and Physics-Informed Machine Learning to enhance physics-based simulations of high-energy electron flux in the radiation belt. </br>
+                                                 In this project we use Bayesian parameter estimation and Physics-Informed Machine Learning to enhance physics-based simulations of high-energy electron flux in the radiation belt. </br>
                                                  The goal is to be able to predict the fluxes of killer electron along a given satellite orbit.
                                                  </p>
                                                  </br>
@@ -90,10 +104,9 @@
 		
                                                 <p><span><img src="images/lasco_swoops_new.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px"/></span>
                                                 Classifying the solar wind in different 'types' is important to improve our statistical studies of solar wind properties. We are studying the classification of solar wind types with respect to their solar origin, by using Gaussian Processes. We have classsified about 300,000 hours of solar wind data taken form the OMNI2 database.</br>
-                                                The paper is avaialable <a href=" " target="_blank">here</a> 
+                                                The paper is available <a href="/papers/camporeale_JGR_2017.pdf " target="_blank">here</a>.</br> 
                                                 The data and software is freely available <a href="https://projects.cwi.nl/mlspaceweather/software.html" target="_blank">here</a>.
 						</p>
-						</br>
 						</br>
 						</br>
 						
@@ -101,24 +114,58 @@
                                                 <p> <span><img src="images/dst_forecast.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px" alt="" /></span>
 						
 						
-                                                We are working on forecast algorithms to predict the Dst geomagnetic index, based on solar wind velocity and magnetic field measured at the L1 point. The latest method employs a combination of Gaussian Processes and Long Short-Term Memory Neural Network. It outputs a distribution probability of future Dst values, up to 6 hours ahead.
+                                                We are working on forecast algorithms to predict the Dst geomagnetic index, based on solar wind velocity and magnetic field measured at the L1 point. The latest method employs a combination of Gaussian Processes and Long Short-Term Memory Neural Network. It outputs a distribution probability of future Dst values, up to 6 hours ahead.</br>
+                                                Publications: </br>
+                                                <li>M. Gruet, M. Chandorkar, A. Sicard, E. Camporeale (2018) 
+                                                <b>Multiple hours ahead forecast of the Dst index using a combination of Long Short-Term Memory neural network and Gaussian Process</b>,<i> Space Weather, </i> 16, 11 
+                                                <font size="2.5"><a href="./papers/gruet_et_al_sw2018.pdf" target="_blank"> Download full text</a></font>
+                                                </li>
+                                                <li> M. Chandorkar, E. Camporeale, S. Wing (2017)
+                                                <b> Probabilistic Forecasting of the Disturbance Storm Time Index: An Autoregressive Gaussian Process approach</b>, <em> Space Weather</em>, 15, 1004
+                                                <font size="2.5"><a href="./papers/swe20479.pdf" target="_blank"> Download full text</a></font>
+                                                </li>
 						</p>
 						</br>
-						</br>
 						
-                                                <h4>Forecast of solar wind speed</h4>
+                                                <h4>Forecast of solar wind speed and magnetic field</h4>
                                                 <p> <span><img src="images/sw_speed.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px" alt="" /></span>
-						We are developing algorithms that forecast the speed of the solar wind, a few days ahead of the arrival time, combining physics-based inputs and data-driven models. The latest model is a probabilistic model that predicts the 'what and when'. </br>
+						We are developing algorithms that forecast the speed and magnetic field of the solar wind, a few days ahead of the arrival time, combining physics-based inputs and data-driven models. The latest model is a probabilistic model that predicts the 'what and when'. </br>
 						<a href= https://ml-helio.github.io/posters/chandorkar.pdf target="_blank"> See a poster of this work here</a>
-						<p></p>
-						</br>
-						</br>
+						<p></p><p></p>
+						<br></br>
+						</br></br>
                                                 <h4>CWI-INRIA project 'Data-enhanced simulations for Space Weather predictions'</h4>
                                                 <span><img src="images/van_allen.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px"alt="" /></span>
 						A project jointly funded by CWI and INRIA, through an <a href="https://www.inria.fr/en/associate-team/mdg-tao" target="_blank">international associate team</a>. We propose an innovative approach to Space Weather modeling: the synergetic use of state-of-the-art simulations with Machine Learning and Data Assimilation techniques, in order to adjust for errors due to non-modeled physical processes, and parameter uncertainties. 
                                                 </p>
 						<p></p></br>
-											<a href="#top">Back to the top</a>
+						<h4>Uncertainty Quantification</h4>
+						  <span><img src="images/UQ.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px"alt="" /></span>
+						A project that aims at quantifying the uncertainty of forecasts. Specifically, we have proposed a method that allows to interpret probabilistically a prediction made with a deterministic model, and we are studying ways to adaptively sample from an unknown distribution, with convergence faster than Monte-Carlo.</br>
+						Publications: </br>
+						<li> Camporeale, E., Agnihotri, A., Rutjes, C. (2017)
+<b>Adaptive selection of sampling points for uncertainty quantification</b>, <em> Int. J. Uncertainty Quant.</em>, 7, 4, 285
+<font size="2.5"><a href="./papers/1612.07827.pdf" target="_blank"> Download full text</a></font>
+</li>
+                                                
+<li> Camporeale, E., Y. Shprits, M. Chandorkar, A. Drozdov, S. Wing (2016) 
+<b> On the propagation of uncertainties in radiation belt simulations </b>, <em> Space Weather</em>
+<font size="2.5"><a href="./papers/camporeale_SW16_for_arxiv.pdf" target="_blank"> Download full text</a></font>
+</li>
+
+                                                </p>
+						<p></p></br>
+						<h4>Information theory for solar wind-magnetosphere coupling</h4>
+                                                <span><img src="images/shannon.jpg" width=15% align="left" alt="" style="margin:0px 50px 20px 0px"alt="" /></span>
+
+<p>We are employing information theory tools to understand the physical coupling between solar wind and magnetosphere. This will help establish the relative importance of exogenous parameters, such as solar wind velocity, flux and interplanetary magnetic field, in predicting local flux enhancement or geomagnetic storm commencement in the radiation belts.</p>
+Publications:</br>
+<li> Wing, S., Johnson, J. R., Camporeale, E., &amp; Reeves, G. D. (2016)<br>
+ <b>Information theoretical approach to discovering solar wind drivers of the outer radiation belt</b> <em>J. Geophys. Res. </em>, 121
+<font size="2.5"><a href=./papers/wing2016.pdf target="_blank"> Download full text</a></font>
+</li>
+
+											
 
 					</section>	
 
@@ -126,27 +173,10 @@
 				</section>
 
 <p><br/></p>
-<h3>Real-time forecasting of killer electrons on satellite orbits (VIDI grant)</h3>
-<p> In this project we will use Bayesian parameter estimation to enhance physics-based simulations of high-energy electron flux in the radiation belt. The goal is to be able to predict the fluxes of killer electron along a given satellite orbit.</p>
-<br/>
-<h3>Solar Wind Classification</h3>
-<p>We are studying the classification of solar wind types with respect to their solar origin, by using Gaussian Processes. We have classsified about 300,000 hours of solar wind data taken form the OMNI2 database</p>
 
 <p><br/></p>
-<h3>One-hour ahead DST forecast</h3>
-We have devised a forecast algorithm to predict the Dst geomagnetic index, based on solar wind velocity and magnetic field measured at the L1 point. The method employs Gaussian Processes and hence it outputs a distribution probability of future Dst values.</p>
 
-<p><br/></p>
-<h3>Information theory for solar wind-magnetosphere coupling</h3>
-<p>We are employing information theory tools to understand the physical coupling between solar wind and magnetosphere. This will help establish the relative importance of exogenous parameters, such as solar wind velocity, flux and interplanetary magnetic field, in predicting local flux enhancement or geomagnetic storm commencement in the radiation belts.</p>
-<p><br/></p>
-<h3>Uncertainty propagation in radiation belt quasi-linear simulations</h3>
-<p>We are investigating how uncertainties on the definition of diffusion coefficients and boundary conditions affect the results of numerical simulations, in the standard quasi-linear framework. In particular,
-we intend to use a Bayesian approach, where the outcome of a simulation will be interpreted within a given confidence interval, as a posterior probability.</p>
-<p><br/></p>
-<h3>SpaceWeather.wiki</h3>
-<p>We are building an open platform where Space Weather modelers can share and compare their models.Our intent is to help the Space Weather community by making this website wiki-styled, non-commercial, and academic oriented. If you are interested in testing, comparing, and ultimately sharing your prediction model, that is the right venue for you!</p>
-
+<a href="#top">Back to the top</a>
        </div><!-- /.row -->
     </div><!-- /.container -->
 
@@ -180,9 +210,9 @@ we intend to use a Bayesian approach, where the outcome of a simulation will be 
     </div>
 
 
-  <script src="https://projects.cwi.nl/mlspaceweather/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="https://projects.cwi.nl/mlspaceweather/theme/js/libs/gumby.min.js"></script>
-  <script src="https://projects.cwi.nl/mlspaceweather/theme/js/plugins.js"></script>
+  <script src="./theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="./theme/js/libs/gumby.min.js"></script>
+  <script src="./theme/js/plugins.js"></script>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
