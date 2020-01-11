@@ -102,14 +102,72 @@ Elsevier (2017)
 </p>
 <h2> Manuscripts</h2>
 
-<br>
+    <span>
+        <a href="./papers/1912.01038.pdf" target="_blank"><img src="./publications_files/dBdt.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+
+        <h4>A gray-box model for a probabilistic estimate of regional ground magnetic perturbations: Enhancing the NOAA operational Geospace model with machine learning. &nbsp; <a href="./papers/1912.01038.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5><u>E. Camporeale</u>, M.D. Cash, H. J. Singer, C. C. Balch, Z. Huang, G. Toth (2020)</u> <i> under review</i> </h5>
+ 
+We present a novel algorithm that predicts the probability that time derivative of the
+horizontal component of the ground magnetic field dB/dt exceeds a specified threshold
+at a given location. This quantity provides important information that is physically
+relevant to Geomagnetically Induced Currents (GIC), which are electric currents in-
+duced by sudden changes in the Earth’s magnetic field due to Space Weather events.
+  <div onclick="openClose(&#39;m1&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="m1" class="texter">
+The model follows a ’gray-box’ approach by combining the output of a physics-based
+model with a machine learning approach. Specifically, we use the University of Michi-
+gan’s Geospace model that is operational at the NOAA Space Weather Prediction
+Center, with a boosted ensemble of classification trees. We discuss in detail the issue
+of combining a large dataset of ground-based measurements (∼ 20 years) with a lim-
+ited set of simulation runs (∼ 2 years) by developing a surrogate model for the years in
+which simulation runs are not available. We also discuss the problem of re-calibrating
+the output of the decision tree to obtain reliable probabilities. The performance of the
+model is assessed by typical metrics for probabilistic forecasts: Probability of Detec-
+tion and False Detection, True Skill Score, Heidke Skill Score, and Receiver Operating
+Characteristic curve.
+<p></p>
+</br></br>
+</div>
+
 
 <p></p>
 
 
 </ol>
 <h2>Published (Peer-reviewed)</h2>
+<h3>2020</h3>
+<ol start=43; reversed>
 
+    <span>
+        <a href="./papers/Chandorkar_2020.pdf" target="_blank"><img src="./publications_files/mandar.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+
+    <li>
+        <h4>DYNAMIC TIME LAG REGRESSION: PREDICTING WHAT AND WHEN. &nbsp; <a href="./papers/Chandorkar_2020.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>M. Chandorkar,<u> Camporeale, E.</u>, C. Furthlener, B. Poduval, M. Sebag (2020)</u> <i> International Conference on Learning Representations 2020</i></h5>
+ This paper tackles a new regression problem, called Dynamic Time-Lag Regression
+(DTLR), where a cause signal drives an effect signal with an unknown time delay.
+The motivating application, pertaining to space weather modelling, aims to predict
+the near-Earth solar wind speed based on estimates of the Sun’s coronal magnetic
+field. <div onclick="openClose(&#39;a42&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a42" class="texter">
+DTLR differs from mainstream regression and from sequence-to-sequence
+learning in two respects: firstly, no ground truth (e.g., pairs of associated sub-
+sequences) is available; secondly, the cause signal contains much information
+irrelevant to the effect signal (the solar magnetic field governs the solar wind prop-
+agation in the heliosphere, of which the Earth’s magnetosphere is but a minuscule
+region).
+A Bayesian approach is presented to tackle the specifics of the DTLR problem,
+with theoretical justifications based on linear stability analysis. A proof of concept
+on synthetic problems is presented. Finally, the empirical results on the solar wind
+modelling task improve on the state of the art in solar wind forecasting.
+<p></p>
+</br></br>
+</div>
+
+</ol>
 <h3>2019</h3>
 <ol start=42; reversed>
 
