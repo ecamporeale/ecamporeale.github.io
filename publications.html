@@ -87,7 +87,7 @@ Elsevier (2017)
 <p></p>
 <br></br>
 <p></p>
-<br></br>
+
 
 <li>A. Carè, <u>E. Camporeale</u> (2018)<br>
 <b> Regression</b>, in <i> Machine Learning Techniques for Space Weather</i> 
@@ -102,46 +102,87 @@ Elsevier (2017)
 </p>
 <h2> Manuscripts</h2>
 
-    <span>
-        <a href="./papers/1912.01038.pdf" target="_blank"><img src="./publications_files/dBdt.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
-    </span> 
+        <h4>Next generation particle precipitation: Mesoscale prediction through machine learning (a case study and framework for progress) &nbsp; <a href="" target="_blank" class="icon fa-download"></a></h4>
+<h5>R. McGranaghan, J. Ziegler, T. Bloch, S. Hatch, <u>E. Camporeale</u>, K. Lynch, M. Owens, J. Gjerloev, B. Zhang, S.H. Skone, <i> under review </i></h5>
+We advance the modeling capability of electron particle precipitation from the magnetosphere to the ionosphere through a new database and use of machine learning tools to gain utility from those data. We have compiled, curated, analyzed, and made available a new and more capable database of particle precipitation data that includes 51 satellite years of Defense Meteorological Satellite Program (DMSP) observations temporally aligned with solar wind and geomagnetic activity data. The new total electron energy flux particle precipitation nowcast model, a neural network called PrecipNet, takes advantage of increased expressive power afforded by machine learning approaches to appropriately utilize diverse information from the solar wind and geomagnetic activity and, importantly, their time histories. <div onclick="openClose(&#39;a47&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a47" class="texter">
+With a more capable representation of the organizing parameters and the target electron energy flux observations, PrecipNet achieves a $>$50\% reduction in errors from a current state-of-the-art model (OVATION Prime), better captures the dynamic changes of the auroral flux, and provides evidence that it can capably reconstruct mesoscale phenomena. We create and apply a new framework for space weather model evaluation that culminates previous guidance from across the solar-terrestrial research community. The research approach and results are representative of the `new frontier' of space weather research at the intersection of traditional and data science-driven discovery and provides a foundation for future efforts.</br></br>
+</div>
+<br><br>
 
-        <h4>A gray-box model for a probabilistic estimate of regional ground magnetic perturbations: Enhancing the NOAA operational Geospace model with machine learning. &nbsp; <a href="./papers/1912.01038.pdf" target="_blank" class="icon fa-download"></a></h4>
-<h5><u>E. Camporeale</u>, M.D. Cash, H. J. Singer, C. C. Balch, Z. Huang, G. Toth (2020)</u> <i> under review</i> </h5>
- 
-We present a novel algorithm that predicts the probability that time derivative of the
-horizontal component of the ground magnetic field dB/dt exceeds a specified threshold
-at a given location. This quantity provides important information that is physically
-relevant to Geomagnetically Induced Currents (GIC), which are electric currents in-
-duced by sudden changes in the Earth’s magnetic field due to Space Weather events.
-  <div onclick="openClose(&#39;m1&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
-<div id="m1" class="texter">
-The model follows a ’gray-box’ approach by combining the output of a physics-based
-model with a machine learning approach. Specifically, we use the University of Michi-
-gan’s Geospace model that is operational at the NOAA Space Weather Prediction
-Center, with a boosted ensemble of classification trees. We discuss in detail the issue
-of combining a large dataset of ground-based measurements (∼ 20 years) with a lim-
-ited set of simulation runs (∼ 2 years) by developing a surrogate model for the years in
-which simulation runs are not available. We also discuss the problem of re-calibrating
-the output of the decision tree to obtain reliable probabilities. The performance of the
-model is assessed by typical metrics for probabilistic forecasts: Probability of Detec-
-tion and False Detection, True Skill Score, Heidke Skill Score, and Receiver Operating
-Characteristic curve.
+
+</ol>
+<h2>Published (Peer-reviewed)</h2>
+<h3>2020</h3>
+<ol start=47; reversed>
+
+    <span>
+        <a href="./papers/Hu_2020_ApJ_900_86.pdf" target="_blank"><img src="./publications_files/CNN_reconnection.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Identifying Magnetic Reconnection in 2D Hybrid Vlasov Maxwell Simulations with Convolutional Neural Networks &nbsp; <a href="./papers/Hu_2020_ApJ_900_86.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>A. Hu, M. Sisti, F. Finelli, F. Califano, J. Dargent, M. Faganello, <u>E. Camporeale</u> , J. Teunissen (2020)</u> <i>Astrophys. J.</i>, 900, 1, 86</h5>
+Magnetic reconnection is a fundamental process that quickly releases magnetic energy stored in a plasma. Identifying from simulation outputs where reconnection is taking place is nontrivial and, in general, has to be performed by human experts. Hence, it would be valuable if such an identification process could be automated. Here, we demonstrate that a machine-learning algorithm can help to identify reconnection in 2D simulations of collisionless plasma turbulence. 
+<div onclick="openClose(&#39;a46&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a46" class="texter">
+Using a Hybrid Vlasov Maxwell model, a data set containing over 2000 potential reconnection events was generated and subsequently labeled by human experts. We test and compare two machine-learning approaches with different configurations on this data set. The best results are obtained with a convolutional neural network combined with an "image cropping" step that zooms in on potential reconnection sites. With this method, more than 70% of reconnection events can be identified correctly. The importance of different physical variables is evaluated by studying how they affect the accuracy of predictions. Finally, we also discuss various possible causes for wrong predictions from the proposed model.<p></p>
+</br></br>
+</div>
+
+</br>
+
+    <span>
+        <a href="./papers/cerri2020.pdf" target="_blank"><img src="./publications_files/NHK.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Space-filter techniques for quasi-neutral hybrid-kinetic models &nbsp; <a href="./papers/cerri2020.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>S.S. Cerri, <u>E. Camporeale</u> (2020)</u> <i>Phys. Plasmas</i>, 27, 082102</h5>
+The space-filter approach has been proved as a fundamental tool in studying turbulence in neutral fluids, providing the ability to analyze scale-to-scale energy transfer in configuration space. It is well known that turbulence in plasma presents challenges different from neutral fluids, especially when the scale of interest includes kinetic effects. The space-filter approach is still largely unexplored for kinetic plasma. 
+  <div onclick="openClose(&#39;a45&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a45" class="texter">
+Here, we derive the space-filtered (or equivalently “coarse-grained”) equations in configuration space for a quasi-neutral hybrid-kinetic plasma model, in which ions are fully kinetic and electrons are a neutralizing fluid. Different models and closures for the electron fluid are considered, including finite electron-inertia effects and full electrons' pressure-tensor dynamics. Implications for the cascade of turbulent fluctuations in real space depending on different approximations are discussed.
+<p></p>
+</br></br>
+</div>
+
+</br>
+
+    <span>
+        <a href="./papers/16921113.pdf" target="_blank"><img src="./publications_files/dBdt.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>A gray-box model for a probabilistic estimate of regional ground magnetic perturbations: Enhancing the NOAA operational Geospace model with machine learning. &nbsp; <a href="./papers/16921113.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5><u>E. Camporeale</u>, M.D. Cash, H. J. Singer, C. C. Balch, Z. Huang, G. Toth (2020)</u> <i> J. Geophys. Res.</i>, 125, e2019JA027684</h5>
+We present a novel algorithm that predicts the probability that the time derivative of the
+horizontal component of the ground magnetic field dB/dt exceeds a specified threshold at a given
+location. This quantity provides important information that is physically relevant to geomagnetically
+induced currents (GICs), which are electric currents associated with sudden changes in the Earth's magnetic
+field due to space weather events. 
+  <div onclick="openClose(&#39;a44&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a44" class="texter">
+The model follows a “gray‐box” approach by combining the output of a
+physics‐based model with machine learning. Specifically, we combine the University of Michigan's
+Geospace model that is operational at the National Oceanic and Atmospheric Administration (NOAA) Space
+Weather Prediction Center, with a boosted ensemble of classification trees. We discuss the problem of
+recalibrating the output of the decision tree to obtain reliable probabilities. The performance of the model is
+assessed by typical metrics for probabilistic forecasts: Probability of Detection and False Detection, True
+Skill Statistic, Heidke Skill Score, and Receiver Operating Characteristic curve. We show that the
+ML‐enhanced algorithm consistently improves all the metrics considered.
 <p></p>
 </br></br>
 </div>
 
 </br>
     <span>
-        <a href="https://arxiv.org/abs/2002.02832" target="_blank"><img src="./publications_files/Bayesian_VAP.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+        <a href="./papers/2019JA027618.pdf" target="_blank"><img src="./publications_files/Bayesian_VAP.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
     </span> 
-
-        <h4>Bayesian inference of quasi-linear radial diffusion parameters using Van Allen Probes &nbsp; <a href="https://arxiv.org/abs/2002.02832" target="_blank" class="icon fa-download"></a></h4>
-<h5>R. Sarma, M. Chandorkar, I. Zhelavskaya, Y. Shprits, A. Drozdov, <u>E. Camporeale</u><i> under review</i> </h5>
+     <li>
+        <h4>Bayesian inference of quasi-linear radial diffusion parameters using Van Allen Probes &nbsp; <a href="./papers/2019JA027618.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>R. Sarma, M. Chandorkar, I. Zhelavskaya, Y. Shprits, A. Drozdov, <u>E. Camporeale</u><i> J. Geophys. Res.</i>, 125, e2019JA027618. </h5>
  
 The Van Allen radiation belts in the magnetosphere have been extensively studied using models based on radial diffusion theory, which is based on a quasi-linear approach with prescribed inner and outer boundary conditions. The 1-d diffusion model requires the knowledge of a diffusion coefficient and an electron loss timescale, which are typically parameterized in terms of various quantities such as the spatial (L) coordinate or a geomagnetic index (for example, Kp). 
-  <div onclick="openClose(&#39;m2&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
-<div id="m2" class="texter">
+  <div onclick="openClose(&#39;a43&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a43" class="texter">
 These terms are empirically derived, not directly measurable, and hence are not known precisely, due to the inherent non-linearity of the process and the variable boundary conditions. In this work, we demonstrate a probabilistic approach by inferring the values of the diffusion and loss term parameters, along with their uncertainty, in a Bayesian framework, where identification is obtained using the Van Allen Probe measurements. Our results show that the probabilistic approach statistically improves the performance of the model, compared to the parameterization employed in the literature.
 <p></p>
 </br></br>
@@ -149,12 +190,6 @@ These terms are empirically derived, not directly measurable, and hence are not 
 
 
 <p></p>
-
-
-</ol>
-<h2>Published (Peer-reviewed)</h2>
-<h3>2020</h3>
-<ol start=43; reversed>
 
     <span>
         <a href="./papers/Chandorkar_2020.pdf" target="_blank"><img src="./publications_files/mandar.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
