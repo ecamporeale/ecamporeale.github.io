@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Enrico Camporeale | Centrum Wiskunde & Informatica</title>
+		<title>Enrico Camporeale | NOAA Space Weather Prediction Center</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -101,18 +101,129 @@ Elsevier (2017)
 <b> Probabilistic Forecasting of Geomagnetic Indices using Gaussian Process Models</b>, in <i> Machine Learning Techniques for Space Weather</i> 
 </p>
 <h2> Manuscripts</h2>
+<ul>
 
-        <h4>Next generation particle precipitation: Mesoscale prediction through machine learning (a case study and framework for progress) &nbsp; <a href="" target="_blank" class="icon fa-download"></a></h4>
-<h5>R. McGranaghan, J. Ziegler, T. Bloch, S. Hatch, <u>E. Camporeale</u>, K. Lynch, M. Owens, J. Gjerloev, B. Zhang, S.H. Skone, <i> under review </i></h5>
-We advance the modeling capability of electron particle precipitation from the magnetosphere to the ionosphere through a new database and use of machine learning tools to gain utility from those data. We have compiled, curated, analyzed, and made available a new and more capable database of particle precipitation data that includes 51 satellite years of Defense Meteorological Satellite Program (DMSP) observations temporally aligned with solar wind and geomagnetic activity data. The new total electron energy flux particle precipitation nowcast model, a neural network called PrecipNet, takes advantage of increased expressive power afforded by machine learning approaches to appropriately utilize diverse information from the solar wind and geomagnetic activity and, importantly, their time histories. <div onclick="openClose(&#39;a47&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<span>
+        <a href="" target="_blank"><img src="./publications_files/napoletano.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Parameter Distributions for the Drag-Based Modeling of CME Propagation &nbsp; <a href="" target="_blank" class="icon fa-download"></a></h4>
+<h5>G. Napoletano, R. Foldes, F. Berrilli, <u>E. Camporeale</u>, at al., <i> under review</i> </h5>
+In recent years, ensemble modelling has been widely employed in space weather to estimate uncertainties in forecasts. We here focus on the ensemble modelling of CME arrival times and arrival velocities using a drag-based model, which is well-suited for this purpose due to its simplicity and low computational cost. Although ensemble techniques have previously been applied to the drag-based model, it is still not clear how to best determine distributions for its input parameters, namely the drag parameter and the solar wind speed. 
+<div onclick="openClose(&#39;a54&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a54" class="texter">
+The aim of this work is to evaluate statistical distributions for these model parameters starting from a list of past CME-ICME events. We employ LASCO coronagraph observations to measure initial CME position and speed, and in situ data to associate them to arrival date and impact speed. For each event we ran a statistical procedure to invert the model equations producing the parameters distributions as the output.
+Our results indicate that the distributions employed in previous works were appropriately selected, even though based on restricted samples and heuristic considerations.
+</div>
+<br><br>
+
+<span>
+        <a href="https://arxiv.org/pdf/2107.14322" target="_blank"><img src="./publications_files/PINN_RB.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Machine-learning based discovery of missing physical processes in radiation belt modeling &nbsp; <a href="https://arxiv.org/pdf/2107.14322" target="_blank" class="icon fa-download"></a></h4>
+<h5><u>E. Camporeale</u>, G. J. Wilkie, A. Drozdov, J. Bortnik,
+<i> under review</i> </h5>
+Real-time prediction of the dynamics of energetic electrons in Earth's radiation belts incorporating incomplete observation data is important to protect valuable artificial satellites and to understand their physical processes. Traditionally, reduced models have employed a diffusion equation based on the quasilinear approximation. Using a Physics-Informed Neutral Network (PINN) framework, we train and test a model based on four years of Van Allen Probe data. We present a recipe for gleaning physical insight from solving the ill-posed inverse problem of inferring model coefficients from data using PINNs. 
+<div onclick="openClose(&#39;a53&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a53" class="texter">
+With this, it is discovered that the dynamics of "killer electrons" is described more accurately instead by a drift-diffusion equation. A parameterization for the diffusion and drift coefficients, which is both simpler and more accurate than existing models, is presented.
+</div>
+<br><br>
+
+
+<span>
+        <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.2" target="_blank"><img src="./publications_files/iong.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>An interpretable machine learning method for forecasting the SYM-H index &nbsp; <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.2" target="_blank" class="icon fa-download"></a></h4>
+<h5>D. Iong, Y. Chen, G. Toth, S. Zou, T. Pulkkinen, J. Ren, <u>E. Camporeale</u>, T. Gombosi,
+<i> under review</i> </h5>
+In this work, we develop gradient boosting machines (GBMs) for forecasting the SYM-H index multiple hours ahead using different combinations of solar wind and interplanetary magnetic field (IMF) parameters, derived parameters, and past SYM-H values. Using Shapley Additive Explanation (SHAP) values to quantify the contributions from each input to predictions of the SYM-H index from GBMs, we show that our predictions are consistent with physical understanding while also providing insight into the complex relationship between the solar wind and Earth's ring current. 
+<div onclick="openClose(&#39;a52&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a52" class="texter">
+We also perform a direct comparison between GBMs and neural networks presented in prior publications for forecasting the SYM-H index by training, validating, and testing them on the same data. We find that the GBMs have a comparable root mean squared error as the best published black-box neural network schemes and GBMs have better Heidke Skill Scores at predicting strong storms.
+</div>
+<br><br>
+
+
+<span>
+        <a href="https://arxiv.org/pdf/2108.06394" target="_blank"><img src="./publications_files/shneider.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>A Machine-Learning-Ready Dataset Prepared from the Solar and Heliospheric Observatory Mission &nbsp; <a href="https://arxiv.org/pdf/2108.06394" target="_blank" class="icon fa-download"></a></h4>
+<h5>C. Shneider, A. Hu, A. K. Tiwari, M. G. Bobra, K. Battams, J. Teunissen, <u>E. Camporeale</u>,
+<i> under review</i> </h5>
+We present a Python tool to generate a standard dataset from solar images that allows for user-defined selection criteria and a range of pre-processing steps. Our Python tool works with all image products from both the Solar and Heliospheric Observatory (SoHO) and Solar Dynamics Observatory (SDO) missions. We discuss a dataset produced from the SoHO mission's multi-spectral images which is free of missing or corrupt data as well as planetary transits in coronagraph images, and is temporally synced making it ready for input to a machine learning system. 
+<div onclick="openClose(&#39;a51&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a51" class="texter">
+Machine-learning-ready images are a valuable resource for the community because they can be used, for example, for forecasting space weather parameters. We illustrate the use of this data with a 3-5 day-ahead forecast of the north-south component of the interplanetary magnetic field (IMF) observed at Lagrange point one (L1). For this use case, we apply a deep convolutional neural network (CNN) to a subset of the full SoHO dataset and compare with baseline results from a Gaussian Naive Bayes classifier.
+</div>
+<br><br>
+
+
+</ul>
+<h2>Published (Peer-reviewed)</h2>
+<h3>2021</h3>
+<ol start=51; reversed>
+
+<span>
+        <a href="./papers/epl20620-offprints.pdf" target="_blank"><img src="./publications_files/feraco.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Connecting Large-Scale Velocity and Temperature Bursts with Small-Scale Intermittency in Stratified Turbulence &nbsp; <a href="./papers/epl20620-offprints.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>F. Feraco, R. Marino, L. Primavera, A. Pumir, P. Mininni, D. Rosenberg, A. Pouquet, R. Foldes, E. Lévêque, <u>E. Camporeale</u>, et al. (2021),
+<i> EPL</i> 135 14001 </h5>
+Non-Gaussian statistics of large-scale fields are routinely observed in data from atmospheric and oceanic campaigns and global models. Recent direct numerical simulations (DNSs) showed that large-scale intermittency in stably stratified flows is due to the emergence of sporadic, extreme events in the form of bursts in the vertical velocity and the temperature. This phenomenon results from the interplay between waves and turbulent motions, affecting mixing. We provide evidence of the enhancement of the classical small-scale (or internal) intermittency due to the emergence of large-scale drafts, connecting large- and small-scale bursts. 
+<div onclick="openClose(&#39;a50&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a50" class="texter">
+To this aim we analyze a large set of DNSs of the stably stratified Boussinesq equations over a wide range of values of the Froude number (Fr ~0.01-1). The variation of the buoyancy field kurtosis with Fr is similar to (though with smaller values than) the kurtosis of the vertical velocity, both showing a non-monotonic trend. We present a mechanism for the generation of extreme vertical drafts and vorticity enhancements which follows from the exact equations for field gradients.
+</div>
+<br><br>
+
+
+    <span>
+        <a href="./papers/IJUQ1104(5)-34623.pdf" target="_blank"><img src="./publications_files/ACCRUE.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>ACCRUE: Accurate and Reliable Uncertainty Estimate in Deterministic models &nbsp; <a href="./papers/IJUQ1104(5)-34623.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5><u>E. Camporeale</u>, A. Carè (2021), <i> Int. J. Uncertainty Quantification </i>, 11(4). </h5>
+In this paper we focus on the problem of assigning uncertainties to single-point predictions generated by a deterministic model that outputs a continuous variable. This problem applies to any state-of-the-art physics or engineering models that have a computational cost that does not readily allow running ensembles and estimating the uncertainty associated to single-point predictions. Essentially, we devise a method to easily transform a deterministic prediction into a probabilistic one. We show that for doing so, one has to compromise between the accuracy and the reliability (calibration) of such a probabilistic model. Hence, we introduce a cost function that encodes their trade-off, and we call this new method ACCRUE (ACCurate and Reliable Uncertainty Estimate). 
+<div onclick="openClose(&#39;a49&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a49" class="texter">
+We use the continuous rank probability score to measure accuracy and we derive an analytic formula for the reliability, in the case of forecasts of continuous scalar variables expressed in terms of Gaussian distributions. The new ACCRUE cost function is then used to estimate the input-dependent variance, given a black-box "oracle" mean function, by solving a two-objective optimization problem. The simple philosophy behind this strategy is that predictions based on the estimated variances should not only be accurate, but also reliable (i.e., statistically consistent with observations). Conversely, early works based on the minimization of classical cost functions, such as the negative log probability density, cannot simultaneously enforce both accuracy and reliability. We show several examples both with synthetic data, where the underlying hidden noise can accurately be recovered, and with large real-world datasets.
+</div>
+<br><br>
+
+    <span>
+        <a href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020SW002684" target="_blank"><img src="./publications_files/precipnet.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Toward a next generation particle precipitation model: Mesoscale prediction through machine learning (a case study and framework for progress) &nbsp; <a href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020SW002684" target="_blank" class="icon fa-download"></a></h4>
+<h5>R. McGranaghan, J. Ziegler, T. Bloch, S. Hatch, <u>E. Camporeale</u>, K. Lynch, M. Owens, J. Gjerloev, B. Zhang, S.H. Skone (2021), <i> Space Weather </i>, 19, e2020SW002684. </h5>
+We advance the modeling capability of electron particle precipitation from the magnetosphere to the ionosphere through a new database and use of machine learning tools to gain utility from those data. We have compiled, curated, analyzed, and made available a new and more capable database of particle precipitation data that includes 51 satellite years of Defense Meteorological Satellite Program (DMSP) observations temporally aligned with solar wind and geomagnetic activity data. The new total electron energy flux particle precipitation nowcast model, a neural network called PrecipNet, takes advantage of increased expressive power afforded by machine learning approaches to appropriately utilize diverse information from the solar wind and geomagnetic activity and, importantly, their time histories. <div onclick="openClose(&#39;a48&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a48" class="texter">
+With a more capable representation of the organizing parameters and the target electron energy flux observations, PrecipNet achieves a >50% reduction in errors from a current state-of-the-art model (OVATION Prime), better captures the dynamic changes of the auroral flux, and provides evidence that it can capably reconstruct mesoscale phenomena. We create and apply a new framework for space weather model evaluation that culminates previous guidance from across the solar-terrestrial research community. The research approach and results are representative of the `new frontier' of space weather research at the intersection of traditional and data science-driven discovery and provides a foundation for future efforts.</br></br>
+</div>
+<br><br>
+
+<span>
+        <a href="https://www.swsc-journal.org/articles/swsc/pdf/2021/01/swsc210064.pdf" target="_blank"><img src="./publications_files/specialissue_JSWSC.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Space Weather research in the Digital Age and across the full data lifecycle: Introduction to the Topical Issue &nbsp; <a href="https://www.swsc-journal.org/articles/swsc/pdf/2021/01/swsc210064.pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>R. McGranaghan, <u>E. Camporeale</u>, M. Georgoulis, A. Anastasiadis (2021), <i> J. Space Weather Space Clim.</i>, 11(50). </h5>
+The onset and rapid advance of the Digital Age have brought challenges and opportunities for scientific research characterized by a continuously evolving data landscape reflected in the four V’s of big data: volume, variety, veracity, and velocity. The big data landscape supersedes traditional means of storage, processing, management, and exploration, and requires adaptation and innovation across the full data lifecycle (i.e., collection, storage and processing, analytics, and representation). The Topical Issue, “Space Weather research in the Digital Age and across the full data lifecycle”, collects research from across the full data lifecycle (collection, management, analysis, and communication; collectively “Data Science”) and offers a tractable compendium that illustrates the latest computational and data science trends, tools, and advances for Space Weather research. 
+<div onclick="openClose(&#39;a47&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
 <div id="a47" class="texter">
-With a more capable representation of the organizing parameters and the target electron energy flux observations, PrecipNet achieves a $>$50\% reduction in errors from a current state-of-the-art model (OVATION Prime), better captures the dynamic changes of the auroral flux, and provides evidence that it can capably reconstruct mesoscale phenomena. We create and apply a new framework for space weather model evaluation that culminates previous guidance from across the solar-terrestrial research community. The research approach and results are representative of the `new frontier' of space weather research at the intersection of traditional and data science-driven discovery and provides a foundation for future efforts.</br></br>
+We introduce the paradigm shift in Space Weather and the articles in the Topical Issue. We create a network view of the research that highlights the contribution to the change of paradigm and reveals the trends that will guide it hereafter.
+
+
 </div>
 <br><br>
 
 
 </ol>
-<h2>Published (Peer-reviewed)</h2>
 <h3>2020</h3>
 <ol start=47; reversed>
 
