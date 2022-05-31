@@ -77,11 +77,11 @@ else { document.getElementById(theID).style.display = "block" } }
 
 <h2> Book and Chapters</h2>
     <span>
-        <a href="http://tiny.cc/ML_spaceweather_book" target="_blank"><img src="./images/ML_book.jpg" width=15% align="left" alt="" style="margin:0px 50px 10px 0px"></a>
+        <a href="https://www.sciencedirect.com/book/9780128117880/machine-learning-techniques-for-space-weather" target="_blank"><img src="./images/ML_book.jpg" width=15% align="left" alt="" style="margin:0px 50px 10px 0px"></a>
     </span> 
 
 		
-        <h4><a href="http://tiny.cc/ML_spaceweather_book" target="_blank">Machine Learning Techniques for Space Weather</a></h4>
+        <h4><a href="https://www.sciencedirect.com/book/9780128117880/machine-learning-techniques-for-space-weather" target="_blank">Machine Learning Techniques for Space Weather</a></h4>
 <h5>(eds.) <u>E. Camporeale</u>, S. Wing, J. Johnson</h5>
 Elsevier (2017)
 <p></p>
@@ -103,19 +103,6 @@ Elsevier (2017)
 <h2> Manuscripts</h2>
 <ul>
 
-<span>
-        <a href="" target="_blank"><img src="./publications_files/napoletano.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
-    </span> 
-       <li>
-        <h4>Parameter Distributions for the Drag-Based Modeling of CME Propagation &nbsp; <a href="" target="_blank" class="icon fa-download"></a></h4>
-<h5>G. Napoletano, R. Foldes, F. Berrilli, <u>E. Camporeale</u>, at al., <i> under review</i> </h5>
-In recent years, ensemble modelling has been widely employed in space weather to estimate uncertainties in forecasts. We here focus on the ensemble modelling of CME arrival times and arrival velocities using a drag-based model, which is well-suited for this purpose due to its simplicity and low computational cost. Although ensemble techniques have previously been applied to the drag-based model, it is still not clear how to best determine distributions for its input parameters, namely the drag parameter and the solar wind speed. 
-<div onclick="openClose(&#39;a54&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
-<div id="a54" class="texter">
-The aim of this work is to evaluate statistical distributions for these model parameters starting from a list of past CME-ICME events. We employ LASCO coronagraph observations to measure initial CME position and speed, and in situ data to associate them to arrival date and impact speed. For each event we ran a statistical procedure to invert the model equations producing the parameters distributions as the output.
-Our results indicate that the distributions employed in previous works were appropriately selected, even though based on restricted samples and heuristic considerations.
-</div>
-<br><br>
 
 <span>
         <a href="https://arxiv.org/pdf/2107.14322" target="_blank"><img src="./publications_files/PINN_RB.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
@@ -132,19 +119,6 @@ With this, it is discovered that the dynamics of "killer electrons" is described
 <br><br>
 
 
-<span>
-        <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.2" target="_blank"><img src="./publications_files/iong.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
-    </span> 
-       <li>
-        <h4>An interpretable machine learning method for forecasting the SYM-H index &nbsp; <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.2" target="_blank" class="icon fa-download"></a></h4>
-<h5>D. Iong, Y. Chen, G. Toth, S. Zou, T. Pulkkinen, J. Ren, <u>E. Camporeale</u>, T. Gombosi,
-<i> under review</i> </h5>
-In this work, we develop gradient boosting machines (GBMs) for forecasting the SYM-H index multiple hours ahead using different combinations of solar wind and interplanetary magnetic field (IMF) parameters, derived parameters, and past SYM-H values. Using Shapley Additive Explanation (SHAP) values to quantify the contributions from each input to predictions of the SYM-H index from GBMs, we show that our predictions are consistent with physical understanding while also providing insight into the complex relationship between the solar wind and Earth's ring current. 
-<div onclick="openClose(&#39;a52&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
-<div id="a52" class="texter">
-We also perform a direct comparison between GBMs and neural networks presented in prior publications for forecasting the SYM-H index by training, validating, and testing them on the same data. We find that the GBMs have a comparable root mean squared error as the best published black-box neural network schemes and GBMs have better Heidke Skill Scores at predicting strong storms.
-</div>
-<br><br>
 
 
 <span>
@@ -164,6 +138,69 @@ Machine-learning-ready images are a valuable resource for the community because 
 
 </ul>
 <h2>Published (Peer-reviewed)</h2>
+<h3>2022</h3>
+<ol start=55; reversed>
+
+<span>
+        <a href="https://doi.org/10.1029/2022SW003064" target="_blank"><img src="./publications_files/andong_dst.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Probabilistic prediction of Dst storms one-day-ahead using Full-Disk SoHO Images &nbsp; <a href="https://doi.org/10.1029/2022SW003064" target="_blank" class="icon fa-download"></a></h4>
+<h5>A. Hu, C. Shneider, A. Tiwari, <u>E. Camporeale</u> (2022)
+<i> Space Weather</i>, in press</h5>
+We present a new model for the probability that the Disturbance storm time (Dst) index exceeds -100 nT, with a lead time between 1 and 3 days. Dst provides essential information about the strength of the ring current around the Earth caused by the protons and electrons from the solar wind, and it is routinely used as a proxy for geomagnetic storms. The model is developed using an ensemble of Convolutional Neural Networks (CNNs) that are trained using SoHO images (MDI, EIT and LASCO). The relationship between the SoHO images and the solar wind has been investigated by many researchers, but these studies have not explicitly considered using SoHO images to predict the Dst index.
+<div onclick="openClose(&#39;a56&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a56" class="texter">
+This work presents a novel methodology to train the individual models and to learn the optimal ensemble weights iteratively, by using a customized class-balanced mean square error (CB-MSE) loss function tied to a least-squares (LS) based ensemble.
+The proposed model can predict the probability that Dst < − 100nT 24 hours ahead with a True Skill Statistic (TSS) of 0.62 and Matthews Correlation Coefficient (MCC) of 0.37. The weighted TSS and MCC from Guastavino et al. (2021) is 0.68 and 0.47, respectively. An additional validation during non-Earth-directed CME periods is also conducted which yields a good TSS and MCC score.
+</div>
+<br><br>
+
+<span>
+        <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.3" target="_blank"><img src="./publications_files/iong.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>New Findings from Explainable SYM-H Forecasting using Gradient Boosting Machines &nbsp; <a href="https://www.essoar.org/pdfjs/10.1002/essoar.10508063.3" target="_blank" class="icon fa-download"></a></h4>
+<h5>D. Iong, Y. Chen, G. Toth, S. Zou, T. Pulkkinen, J. Ren, <u>E. Camporeale</u>, T. Gombosi (2022)
+<i> Space Weather</i>, in press</h5>
+In this work, we develop gradient boosting machines (GBMs) for forecasting the SYM-H index multiple hours ahead using different combinations of solar wind and interplanetary magnetic field (IMF) parameters, derived parameters, and past SYM-H values. Using Shapley Additive Explanation (SHAP) values to quantify the contributions from each input to predictions of the SYM-H index from GBMs, we show that our predictions are consistent with physical understanding while also providing insight into the complex relationship between the solar wind and Earth's ring current. 
+<div onclick="openClose(&#39;a52&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a52" class="texter">
+We also perform a direct comparison between GBMs and neural networks presented in prior publications for forecasting the SYM-H index by training, validating, and testing them on the same data. We find that the GBMs have a comparable root mean squared error as the best published black-box neural network schemes and GBMs have better Heidke Skill Scores at predicting strong storms.
+</div>
+<br><br>
+
+<span>
+        <a href="https://www.frontiersin.org/articles/10.3389/fphy.2022.786639/pdf" target="_blank"><img src="./publications_files/kluth.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Machine Learning Methods Applied to the Global Modeling of Event-Driven Pitch Angle Diffusion Coefficients During High Speed Streams &nbsp; <a href="https://www.frontiersin.org/articles/10.3389/fphy.2022.786639/pdf" target="_blank" class="icon fa-download"></a></h4>
+<h5>G. Kluth, J.-F. Ripoll, S. Has, A. Fischer, M. Mougeot and <u>E. Camporeale</u> (2022)<i> Frontiers in Physics</i></h5>
+Whistler-mode waves in the inner magnetosphere cause electron precipitation in the atmosphere through the physical process of pitch-angle diffusion. The computation of pitch-angle diffusion relies on quasi-linear theory and becomes time-consuming as soon as it is performed at high temporal resolution from satellite measurements of ambient wave and plasma properties. Such an effort is nevertheless required to capture accurately the variability and complexity of atmospheric electron precipitation, which are involved in various Earth’s ionosphere-magnetosphere coupled problems. 
+<div onclick="openClose(&#39;a55&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a55" class="texter">
+In this work, we build a global machine-learning model of event-driven pitch-angle diffusion coefficients for storm conditions based on the data of a variety of storms observed by the NASA Van Allen Probes. We first proceed step-by-step by testing 8 nonparametric machine learning methods. With them, we derive machine learning based models of event-driven diffusion coefficients for the storm of March 2013 associated with high-speed streams. We define 3 diagnostics that allow highlighting of the properties of the selected model and selection of the best method. Three methods are retained for their accuracy/efficiency: spline interpolation, the radial basis method, and neural networks (DNN), the latter being selected for the second step of the study. We then use event-driven diffusion coefficients computed from 32 high-speed stream storms in order to build for the first time a statistical event-driven diffusion coefficient that is embedded within the retained DNN model. We achieve a global mean event-driven model in which we introduce a two-parameter dependence, with both the Kp-index and time kept as in an epoch analysis following the storm evolution. The DNN model does not entail any issue to reproduce quite perfectly its target, i.e., averaged diffusion coefficients, with rare exception in the Landau resonance region. The DNN mean model is then used to analyze how mean diffusion coefficients behave compared with individual ones. We find a poor performance of any mean models compared with individual events, with mean diffusion coefficients computing the general trend at best, due to their large variability. The DNN-based model allows simple and fast data exploration of pitch-angle diffusion among its multiple variables. We finally discuss how to conduct uncertainty quantification of Fokker-Planck simulations of storm conditions for space weather nowcasting and forecasting.
+</div>
+<br><br>
+
+
+
+<span>
+        <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021SW002925" target="_blank"><img src="./publications_files/napoletano.png" width=10% align="left" alt="" style="margin:0px 50px 10px 0px; border-radius: 15%;"></a>
+    </span> 
+       <li>
+        <h4>Parameter Distributions for the Drag-Based Modeling of CME Propagation &nbsp; <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021SW002925" target="_blank" class="icon fa-download"></a></h4>
+<h5>G. Napoletano, R. Foldes, F. Berrilli, <u>E. Camporeale</u>, at al., (2022)<i> Space Weather</i>, in press </h5>
+In recent years, ensemble modelling has been widely employed in space weather to estimate uncertainties in forecasts. We here focus on the ensemble modelling of CME arrival times and arrival velocities using a drag-based model, which is well-suited for this purpose due to its simplicity and low computational cost. Although ensemble techniques have previously been applied to the drag-based model, it is still not clear how to best determine distributions for its input parameters, namely the drag parameter and the solar wind speed. 
+<div onclick="openClose(&#39;a54&#39;)" style="cursor:hand; cursor:pointer"><font size="2.5"><u>More/Less</u> </font></div>
+<div id="a54" class="texter">
+The aim of this work is to evaluate statistical distributions for these model parameters starting from a list of past CME-ICME events. We employ LASCO coronagraph observations to measure initial CME position and speed, and in situ data to associate them to arrival date and impact speed. For each event we ran a statistical procedure to invert the model equations producing the parameters distributions as the output.
+Our results indicate that the distributions employed in previous works were appropriately selected, even though based on restricted samples and heuristic considerations.
+</div>
+<br><br>
+
+</ol>
+
 <h3>2021</h3>
 <ol start=51; reversed>
 
